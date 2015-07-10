@@ -1,6 +1,6 @@
 {
   "name": "config-load",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Load config from a tree of JS/JSON files",
   "main": "./lib/",
   "author": {
