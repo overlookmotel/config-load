@@ -1,0 +1,50 @@
+{
+  "name": "config-load",
+  "version": "0.0.0",
+  "description": "Load config from a tree of JS/JSON files",
+  "main": "./lib/",
+  "author": {
+    "name": "Overlook Motel"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/overlookmotel/config-load.git"
+  },
+  "bugs": {
+    "url": "https://github.com/overlookmotel/config-load/issues"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "mocha": "^2.2.4",
+    "chai": "^2.3.0",
+	"jshint": "^2.7.0",
+    "istanbul": "^0.3.14",
+    "coveralls": "^2.11.2"
+  },
+  "keywords": [
+    "config",
+    "cofiguration",
+    "load",
+    "files",
+    "folders",
+    "tree",
+    "hierarchy",
+    "env",
+    "environment"
+  ],
+  "scripts": {
+    "test": "make test",
+    "cover": "make cover"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "readmeFilename": "README.md",
+  "licenses": [
+    {
+      "type": "MIT",
+      "url": "http://github.com/overlookmotel/config-load/raw/master/License"
+    }
+  ]
+}
