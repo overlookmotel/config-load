@@ -89,6 +89,33 @@ returns:
 }
 ```
 
+##### `null` value
+
+If a `selector`'s value is `null`, it takes the `name` key only.
+
+If config file parsing produces:
+
+```js
+{
+    url: 'http://example.com/',
+    local: {
+        url: 'http://mysite.com/'
+    }
+}
+```
+
+```js
+configLoad(path, { selectors: { local: null } } )
+```
+
+returns:
+
+```js
+{
+    url: 'http://mysite.com/'
+}
+```
+
 ## Tests
 
 Use `npm test` to run the tests. Use `npm run cover` to check coverage.

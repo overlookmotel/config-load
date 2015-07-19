@@ -62,4 +62,22 @@ describe('configLoad', function() {
 			}
 		});
 	});
+
+	it('switches based on null selectors', function() {
+		var config = configLoad(path, { env: false, selectors: { c: null } });
+		expect(config).to.deep.equal({
+			a: 1,
+			b: 2,
+			env: {
+				development: {b: 22, c: {d: 44}},
+				production: {b: 222, c: {d: 444}}
+			},
+			switch: {
+				one: {b: 2222},
+				two: {b: 22222}
+			},
+			d: 4,
+			e: 5
+		});
+	});
 });
