@@ -1,5 +1,7 @@
 # config-load.js
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/overlookmotel/config-load.svg)](https://greenkeeper.io/)
+
 # Load config from a tree of JS/JSON files
 
 ## Current status
